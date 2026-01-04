@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Fundamentals Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1> JavaScript Fundamentals Assignment</h1>
+            <p>Exploring Variables, Functions, Loops & DOM Manipulation</p>
+        </header>
+
+        <main>
+            <!-- Part 1: Basics Section -->
+            <section class="card">
+                <h2>JavaScript Basics</h2>
+                <p class="description">Variables, operators, and conditionals</p>
+                <button id="runPart1" class="btn btn-blue">Run Part 1 Examples</button>
+            </section>
+
+            <!-- Part 2: Functions Section -->
+            <section class="card">
+                <h2> Functions</h2>
+                <p class="description">Reusable logic blocks</p>
+                <button id="runPart2" class="btn btn-green">Run Part 2 Examples</button>
+            </section>
+
+            <!-- Part 3: Loops Section -->
+            <section class="card">
+                <h2>Loops</h2>
+                <p class="description">Power of repetition and iteration</p>
+                <button id="runPart3" class="btn btn-purple">Run Part 3 Examples</button>
+            </section>
+
+            <!-- Part 4: DOM Manipulation Section -->
+            <section class="card">
+                <h2>DOM Interaction</h2>
+                
+                <!-- User Input Form -->
+                <div class="form-group">
+                    <label for="username">Your Name:</label>
+                    <input type="text" id="username" placeholder="john doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="age">Your Age:</label>
+                    <input type="number" id="age" placeholder="25">
+                </div>
+                
+                <button id="processUser" class="btn btn-yellow">Process User Data</button>
+
+                <!-- Dynamic List Generator -->
+                <div class="separator"></div>
+                <h3>Dynamic List Generator</h3>
+                <div class="form-group">
+                    <label for="itemCount">Number of Items: <span id="itemCountDisplay">5</span></label>
+                    <input type="range" id="itemCount" min="1" max="20" value="5">
+                </div>
+                <button id="generateList" class="btn btn-cyan">Generate Items</button>
+                <ul id="dynamicList"></ul>
+
+                <!-- Interactive Elements -->
+                <div class="separator"></div>
+                <h3>Interactive Elements</h3>
+                <div class="color-box" id="colorBox">A</div>
+                <button id="toggleColor" class="btn btn-pink">Toggle Color</button>
+                
+                <button id="toggleVisibility" class="btn btn-indigo">Toggle Content</button>
+                <div id="toggleContent" class="toggle-content">
+                    <p>This content can be toggled on and off!</p>
+                    <p>DOM manipulation in action.</p>
+                </div>
+
+                <!-- Countdown Timer -->
+                <div class="separator"></div>
+                <div class="countdown">
+                    <div id="countdownDisplay" class="countdown-display">10</div>
+                    <p>seconds</p>
+                </div>
+                <button id="startCountdown" class="btn btn-orange">Start Countdown</button>
+            </section>
+
+            <!-- Console Output Section -->
+            <section class="card console-section">
+                <div class="console-header">
+                    <h2>Console Output</h2>
+                    <button id="clearConsole" class="btn-small">Clear</button>
+                </div>
+                <div id="consoleOutput" class="console">
+                    <p class="console-placeholder">Run any example to see output here...</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p> All four parts demonstrated: Basics • Functions • Loops • DOM</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
